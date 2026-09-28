@@ -318,7 +318,7 @@ const Register = () => {
             {/* Content */}
             <div className="max-w-xl">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
-                <HeartPulse className="h-4 w-4" />
+                <Sparkles className="h-4 w-4" />
                 Designed Around You
               </div>
 

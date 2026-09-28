@@ -122,8 +122,11 @@ const Login = () => {
             {/* Mobile brand */}
             <div className="mb-10 flex items-center justify-center lg:hidden">
               <Link to="/" className="flex items-center gap-3">
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-950 text-xl font-black text-white">
+                {/* <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-950 text-xl font-black text-white">
                   +
+                </div> */}
+                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-slate-950 shadow-lg">
+                  <HeartPulse className="h-6 w-6" strokeWidth={2.5} />
                 </div>
 
                 <div>

@@ -1241,7 +1241,15 @@ const SingleDoctor = () => {
                 <Navigation className="h-4 w-4" />
                 Get Directions
               </button>
+              <button
+                type="button"
+                className="mt-3 flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 px-4 py-3 text-sm font-bold text-slate-700 transition-all hover:border-cyan-200 hover:text-cyan-700"
+                >
+                <Phone className="h-4 w-4" />
+                Contact Clinic
+             </button>
             </div>
+            
 
             {/* Languages */}
             <div className="rounded-[2rem] border border-slate-200 bg-white p-6">
