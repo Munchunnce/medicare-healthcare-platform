@@ -9,7 +9,7 @@ import {
   LockKeyhole,
   Mail,
   ShieldCheck,
-  Sparkles,
+  // Sparkles,
   User,
 } from "lucide-react";
 
@@ -41,11 +41,8 @@ const Register = () => {
             {/* Mobile brand */}
             <div className="mb-10 flex items-center justify-center lg:hidden">
               <Link to="/" className="flex items-center gap-3">
-                {/* <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-950 text-xl font-black text-white">
+                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-950 text-xl font-black text-white">
                   +
-                </div> */}
-                <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-slate-950 text-white shadow-lg">
-                  <HeartPulse className="h-6 w-6" strokeWidth={2.5} />
                 </div>
 
                 <div>
@@ -304,7 +301,7 @@ const Register = () => {
             {/* Brand */}
             <Link to="/" className="inline-flex w-fit items-center gap-3">
               <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-xl font-black text-slate-950">
-                <HeartPulse className="h-6 w-6" strokeWidth={2.5} />
+                +
               </div>
 
               <div>
@@ -321,7 +318,7 @@ const Register = () => {
             {/* Content */}
             <div className="max-w-xl">
               <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-cyan-400/20 bg-cyan-400/5 px-4 py-2 text-xs font-semibold uppercase tracking-[0.16em] text-cyan-300">
-                <Sparkles className="h-4 w-4" />
+                <HeartPulse className="h-4 w-4" />
                 Designed Around You
               </div>
 
