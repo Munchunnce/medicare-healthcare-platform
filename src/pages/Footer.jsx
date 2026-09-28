@@ -6,6 +6,7 @@ import {
   Phone,
   ShieldCheck,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -39,13 +40,13 @@ const Footer = () => {
               </p>
             </div>
 
-            <a
+            <Link
               href="/appointments"
               className="group inline-flex shrink-0 items-center justify-center gap-2 rounded-xl bg-white px-6 py-3.5 text-sm font-semibold text-slate-950 transition-all duration-300 hover:-translate-y-0.5 hover:shadow-2xl"
             >
               Book an Appointment
               <ArrowUpRight className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
-            </a>
+            </Link>
           </div>
         </div>
 
@@ -53,7 +54,7 @@ const Footer = () => {
         <div className="grid gap-12 py-14 lg:grid-cols-[1.5fr_1fr_1fr_1fr] lg:py-16">
           {/* Brand */}
           <div>
-            <a href="/" className="inline-flex items-center gap-3">
+            <Link href="/" className="inline-flex items-center gap-3">
               <div className="flex h-11 w-11 items-center justify-center rounded-2xl bg-white text-slate-950 shadow-lg">
                 <span className="text-xl font-black">+</span>
               </div>
@@ -66,7 +67,7 @@ const Footer = () => {
                   Healthcare
                 </span>
               </div>
-            </a>
+            </Link>
 
             <p className="mt-6 max-w-sm text-sm leading-7 text-slate-400">
               A modern healthcare platform designed to make discovering,
@@ -75,7 +76,7 @@ const Footer = () => {
 
             {/* Contact */}
             <div className="mt-7 space-y-4">
-              <a
+              <Link
                 href="mailto:hello@medicare.com"
                 className="group flex items-center gap-3 text-sm text-slate-400 transition-colors hover:text-white"
               >
@@ -83,9 +84,9 @@ const Footer = () => {
                   <Mail className="h-4 w-4" />
                 </span>
                 hello@medicare.com
-              </a>
+              </Link>
 
-              <a
+              <Link
                 href="tel:+18001234567"
                 className="group flex items-center gap-3 text-sm text-slate-400 transition-colors hover:text-white"
               >
@@ -93,7 +94,7 @@ const Footer = () => {
                   <Phone className="h-4 w-4" />
                 </span>
                 +91-9708723622
-              </a>
+              </Link>
 
               <div className="flex items-center gap-3 text-sm text-slate-400">
                 <span className="flex h-9 w-9 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04]">
@@ -117,13 +118,13 @@ const Footer = () => {
                 ["Healthcare Services", "/services"],
               ].map(([label, href]) => (
                 <li key={label}>
-                  <a
+                  <Link
                     href={href}
                     className="group inline-flex items-center gap-1.5 text-sm text-slate-400 transition-colors hover:text-white"
                   >
                     {label}
                     <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -142,13 +143,13 @@ const Footer = () => {
                 ["Contact Us", "/contact"],
               ].map(([label, href]) => (
                 <li key={label}>
-                  <a
+                  <Link
                     href={href}
                     className="group inline-flex items-center gap-1.5 text-sm text-slate-400 transition-colors hover:text-white"
                   >
                     {label}
                     <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -167,13 +168,13 @@ const Footer = () => {
                 ["Press", "/press"],
               ].map(([label, href]) => (
                 <li key={label}>
-                  <a
+                  <Link
                     href={href}
                     className="group inline-flex items-center gap-1.5 text-sm text-slate-400 transition-colors hover:text-white"
                   >
                     {label}
                     <ArrowUpRight className="h-3.5 w-3.5 opacity-0 transition-all duration-200 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 group-hover:opacity-100" />
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -228,47 +229,47 @@ const Footer = () => {
 
           {/* Legal */}
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-slate-500">
-            <a
+            <Link
               href="/privacy"
               className="transition-colors hover:text-white"
             >
               Privacy Policy
-            </a>
+            </Link>
 
-            <a href="/terms" className="transition-colors hover:text-white">
+            <Link href="/terms" className="transition-colors hover:text-white">
               Terms of Service
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/accessibility"
               className="transition-colors hover:text-white"
             >
               Accessibility
-            </a>
+            </Link>
 
-            <a
+            <Link
               href="/cookies"
               className="transition-colors hover:text-white"
             >
               Cookie Policy
-            </a>
+            </Link>
           </div>
 
           {/* Social */}
           {/* Social */}
 <div className="flex items-center gap-2">
   {/* LinkedIn */}
-  <a
+  <Link
     href="#"
     aria-label="LinkedIn"
     className="group flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-sm font-bold text-slate-400 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/[0.09] hover:text-white"
   >
     in
-  </a>
+  </Link>
 
   {/* Instagram */}
-  <a
-    href="#"
+  <Link
+    href="#)"
     aria-label="Instagram"
     className="group flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-slate-400 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/[0.09] hover:text-white"
   >
@@ -283,10 +284,10 @@ const Footer = () => {
       <circle cx="12" cy="12" r="4" />
       <circle cx="17.5" cy="6.5" r="0.8" fill="currentColor" />
     </svg>
-  </a>
+  </Link>
 
   {/* X / Twitter */}
-  <a
+  <Link
     href="#"
     aria-label="X"
     className="group flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-slate-400 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/[0.09] hover:text-white"
@@ -298,16 +299,16 @@ const Footer = () => {
     >
       <path d="M18.244 2H21.5l-7.11 8.13L22.75 22h-6.55l-5.13-6.72L5.19 22H1.93l7.61-8.69L1.5 2h6.72l4.64 6.14L18.244 2Zm-1.15 17.87h1.81L7.22 4.03H5.28L17.094 19.87Z" />
     </svg>
-  </a>
+  </Link>
 
   {/* Facebook */}
-  <a
+  <Link
     href="#"
     aria-label="Facebook"
     className="group flex h-10 w-10 items-center justify-center rounded-xl border border-white/10 bg-white/[0.04] text-sm font-bold text-slate-400 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white/[0.09] hover:text-white"
   >
     f
-  </a>
+  </Link>
 </div>
         </div>
 
