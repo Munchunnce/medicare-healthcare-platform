@@ -1,4 +1,3 @@
-````md
 # 🏥 MediCare — Premium Healthcare & Doctor Appointment Platform
 
 <div align="center">
@@ -932,7 +931,6 @@ Book with confidence.**
 
 ---
 
-Made with ❤️ using React.js
+Made with ❤️ Vimal Kumar Chaudhary
 
 </div>
-```
